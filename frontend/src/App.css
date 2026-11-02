@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #101014;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  background: #101014;
+}
+
+.navbar {
+  height: 75px;
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #24242c;
+}
+
+.navbar h2 {
+  font-size: 25px;
+  letter-spacing: -1px;
+}
+
+.navbar h2 span {
+  color: #a78bfa;
+}
+
+.navbar p {
+  color: #92929f;
+  font-size: 13px;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 65px 25px;
+}
+
+.hero {
+  margin-bottom: 45px;
+}
+
+.tag {
+  color: #a78bfa;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 5vw, 58px);
+  line-height: 1.15;
+  margin: 18px 0;
+  letter-spacing: -2px;
+}
+
+.hero h1 span {
+  color: #a78bfa;
+}
+
+.hero p {
+  color: #92929f;
+  max-width: 480px;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  align-items: start;
+}
+
+.detection-card,
+.songs-card {
+  background: #19191f;
+  border: 1px solid #292932;
+  border-radius: 18px;
+  padding: 28px;
+  min-height: 280px;
+}
+
+.detection-card h2,
+.songs-card h2 {
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.detection-card > p {
+  color: #92929f;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #666675;
+  font-size: 12px;
+  border-top: 1px solid #24242c;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .navbar p {
+    font-size: 11px;
+  }
+
+  .main-content {
+    padding: 40px 18px;
+  }
+
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 39px;
+  }
+
+  .detection-card,
+  .songs-card {
+    padding: 20px;
+  }
+}
